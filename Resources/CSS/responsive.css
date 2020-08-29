@@ -1,0 +1,67 @@
+@media only screen and (max-width:1024px)
+{
+    .row{
+        margin: 0 15px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    html{
+        font-size:47%;
+    }
+
+    .hero-text-box{
+        width: 90%;
+    } 
+
+    .client-photo{
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+
+    .client-review{
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+
+    .contact-section{
+        width:100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 980px)
+{
+    .row{
+        margin: 0 15px;
+        
+    }
+    
+    html{
+        font-size: 42%;
+    }    
+
+    .span_1_of_4{
+        width:49.2%;
+    }
+
+    .span_1_of_4:nth-child(3){
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 980px)
+{
+    .span_1_of_4{
+        width:100%;
+    }
+
+    .little-description{
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,581 @@
+/* ******************************* */
+/* BASIC SETUP */
+/* ******************************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;  
+    line-height: 2.3rem;
+    font-size: 1.6rem;    
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* ******************************* */
+/* HEADING */
+/* ******************************* */
+h1{
+    font-size: 4.216rem;
+    color: #fff;
+    line-height: 3.5rem;
+}
+
+
+/* ******************************* */
+/* REUSABLE COMPONENTS */
+/* ******************************* */
+
+.row{
+    max-width: 114rem;
+    margin:0 auto;
+}
+
+section{
+    padding: 8rem 0;
+}
+
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border: 0.3rem solid #333;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.6rem 4rem;
+    border-radius:3px;
+    display: inline-block;
+    margin-top: 4.5rem;
+    font-size:1.8rem;
+    font-family: 'Titilliuam web','semi-bold',sans-serif;
+}
+
+.little-description{    
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2::after{
+    content: "";    
+    display: block;
+    background: #14A58C;
+    height: .4rem;
+    width: 8.6rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.box{
+    padding: 3%;
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+h4{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* ******************************* */
+/* HEADER SECTION */
+/* ******************************* */
+
+header{
+    background: linear-gradient(rgba(135,80,156,0.9),rgba(135,80,156,0.9)),
+    url("Img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height:85vh;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    margin-top: 3.5rem;
+    height: 3.5rem;
+    width: auto;
+}
+
+.main-nav{
+    float: right;  
+    margin-top: 4rem; 
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 1rem;
+   
+}
+
+.main-nav li:first-child{
+    margin-left: 0rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100,58,121,0);
+    padding: 1rem 1.6rem;
+    border-radius: 0.3rem;
+    display:inline-block;
+    font-size: 1.6rem;
+    transition: 3s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: #643A79;
+}
+
+.active{
+    background: #643A79;
+    border-radius: 0.3rem;
+}
+
+.hero-text-box{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 114rem;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+    background: #EB7D4B;
+    border-color: #C86A40;
+}
+
+/* ******************************* */
+/* SERVICE SECTION */
+/* ******************************* */
+
+.service-section{
+    background: linear-gradient(rgba(20, 182, 152, 0.9),rgba(23, 194, 164,0.9)),
+    url("Img/pexels-fauxels-3182739.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+ 
+}
+
+.service-icons{
+    margin-top: 8.1rem;
+    height: 12.6rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.service-description{
+    margin-top: 2.8rem;
+    margin:auto;
+    font-size: 1.6rem;
+}
+
+/* ******************************* */
+/* TEAM SECTION */
+/* ******************************* */
+.service-team{
+    text-align: center;
+    background: linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)),
+    url("Img/pexels-fauxels-3183127.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+}
+
+.service-team h2{
+    color: #3C4761;
+    margin: auto;
+}
+
+.service-team h2::after{
+    background: #C8D9E5;
+}
+
+.team-member{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.team-member h4{
+    color: #27283D;
+}
+
+.role{
+    font-size: 1.6rem;
+    color: #30BAE7;
+    font-weight: 600;
+    margin-top: .5rem;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.service-team .box p{
+    color: #535E75;
+    font-weight: 600;
+}
+
+.social-link{
+    margin-top: 2.5rem;
+}
+
+.social-link .fab{
+    color:#FFF;
+}
+
+.social-link .fa{
+    color:#FFF;
+}
+.social-link ul li{
+    display: inline-block;
+    margin:0 .3rem;
+}
+
+.social-link ul li a:link{
+    color: #fff;  
+}
+
+.social-link ul li a:link i::before{
+    display: inline-block;
+    background: #BDD1DF;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    padding: 0.9rem;
+    font-size: 1.6rem;
+    transition: 0.5s;
+}
+
+.social-link ul li a:hover i::before{
+    background-color: #637785;
+    transform: rotate(360deg);
+}
+
+
+/* ******************************* */
+/* SKILL SECTION */
+/* ******************************* */
+
+.skill-section{
+    background: linear-gradient( rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.911)),
+    url("Img/pexels-negative-space-34092.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #3C4761;
+    text-align: center;
+}
+
+.skill-section h2:after{
+    background: #DFE8ED;
+
+}
+
+.skill-section h4{
+    font-size: 2.4rem;
+    color: #3C4761;
+}
+
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+
+svg.radial-progress text{
+    fill: #3C4761;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+svg.web-design circle{
+    stroke: #30BAE7;
+}
+
+svg.html-css circle{
+    stroke: #D74680;
+}
+
+svg.graphic-design circle{
+    stroke: #15C7A8;
+}
+
+svg.ui-ux circle{
+    stroke: #EB7D4B;
+}
+
+/* ******************************** */
+/* PORTFOLIO SECTION */
+/* ******************************** */
+
+.portfolio-service{
+    background: linear-gradient(rgba(255, 221, 153, 0.9),
+    rgba(255, 221, 153, 0.9)),
+    url("Img/portfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+
+}
+
+.portfolio-service h2{
+    color: #393939;
+    font-size: 4rem;
+}
+
+.portfolio-service h2:after{
+    background: #E5C37F;
+}
+
+.portfolio-filter{
+    text-align: center;
+    margin-top: 4.8rem;
+    margin-bottom: 6.2rem;
+}
+
+.portfolio-service .btn-load-more{
+    background: #17C2A4;
+    border-color: #14A58C;
+}
+
+button{
+    height:3.9rem;
+    width:8.2rem;
+    text-transform: uppercase;
+    border-style: none;
+    padding: 1rem 1.6rem;
+    border-radius: 0.5rem;
+    background: #EBC985;
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+button:hover{
+    /* background: #ffffff; */
+    cursor: pointer;
+    box-shadow: inset 0 0.3rem 0.5rem  #3c4761;
+}
+
+.portfolio-service .mixitup-control-active{
+    background: #FFF;
+}
+
+.portfolio-service h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #393939;
+    text-align: center;
+    margin-top: 3.2rem;
+    margin-bottom: 6.6rem;
+}
+
+.portfolio-image{
+    width: 100%;
+    height: 30rem;
+}
+
+/* ******************************* */
+/* TESTIMONIAL SECTION */
+/* ******************************* */
+
+.testimonial{
+    background: linear-gradient(rgba(215, 70, 128, 0.9),
+    rgba(215, 70, 128, 0.9)), url("Img/people-say.jpeg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial h2{
+    color: #FFFFFF;
+}
+
+.testimonial h2::after{
+    background: #B73C6D;
+}
+
+.testimonial .little-description{
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.testimonial .client-review:nth-child(1),
+.testimonial .client-review:nth-child(2){
+    margin-top: 4rem;
+}
+
+.testimonial .client-review:nth-child(3),
+.testimonial .client-review:nth-child(4){
+    margin-top: 8rem;
+}
+
+.client-photo{
+    width:10rem;
+    float: left;
+}
+
+.client-photo img{
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.client-review{
+    float: left;
+    width: 35rem;
+}
+
+.client-review p{
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-top: -3.5rem;
+    margin-bottom: 2rem;
+}
+
+.client-review h4{
+    color:#fff;
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+}
+.client-review .role{
+    color: #ffdd99;
+    font-size: 1.8rem;
+}
+
+/* ******************************* */
+/* CONTACT SECTION */
+/* ******************************* */
+
+.contact-section{
+    background: linear-gradient(rgba(60, 84, 153, 0.9),
+    rgba(60, 84, 153, 0.9)), url("Img/last.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.contact-section h2{
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.contact-section h2::after{
+    background: #273A71;
+}
+
+.contact-section .little-description{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273A71;
+    border: .1rem solid #273A71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    margin: .5rem;
+    color: #FFFFFF;
+}
+
+.contact-section form ::placeholder{
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.btn-submit{
+    border: 0;
+    border-bottom: .3rem solid #299EC5;
+    background: #30BAE7;
+    cursor: pointer;
+}
+
+/* ******************************* */
+/* FOOTER SECTION */
+/* ******************************* */
+
+.footer-section{
+    background: #344B8E;
+    padding:3rem 0;
+    text-align: center;
+    border-top: .1rem solid #ffffff49
+}
+
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.footer-section li a{
+    color:#FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.footer-section li a:hover{
+    color: #30BAE7
+}
